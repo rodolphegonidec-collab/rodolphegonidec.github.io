@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodolphe GONIDEC — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">R.<span>G</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="formation.html">Formation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-shape"></div>
+  <div class="hero-bg-line"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="dot"></span>Disponible en alternance — BUT Info 2ème année</div>
+      <h1>Rodolphe<br><em>GONIDEC</em></h1>
+      <p class="hero-sub">Étudiant en BUT Informatique · IUT de Lannion</p>
+      <p class="hero-desc">Passionné par le développement et les systèmes, je recherche une alternance pour ma 2ème année de BUT Informatique. Autonome, organisé et toujours curieux d'apprendre.</p>
+      <div class="hero-btns">
+        <a href="competences.html" class="btn btn-primary">Voir mes compétences →</a>
+        <a href="contact.html" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="avatar-wrap">RG</div>
+      <h3>Rodolphe GONIDEC</h3>
+      <p class="card-sub">18 ans · Langueux, Côtes-d'Armor (22)</p>
+      <div class="info-row"><span class="info-icon">✉</span>rodolphegonidec@gmail.com</div>
+      <div class="info-row"><span class="info-icon">✆</span>07 66 07 72 73</div>
+      <div class="info-row"><span class="info-icon">⊙</span>8 rue André Berthelot, Langueux</div>
+      <div class="info-row"><span class="info-icon">⚲</span>Permis B · Véhiculé</div>
+      <div class="skills-mini">
+        <span class="pill blue">Python</span>
+        <span class="pill blue">Java</span>
+        <span class="pill blue">C</span>
+        <span class="pill blue">HTML/CSS</span>
+        <span class="pill">Docker</span>
+        <span class="pill">Git</span>
+        <span class="pill">Linux</span>
+        <span class="pill">SQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="apercu">
+  <div class="container">
+    <div class="section-label">BUT Informatique — 1ère année</div>
+    <h2>Mes 6 <em>Compétences</em></h2>
+    <div class="apercu-grid">
+      <a href="competences.html#c1" class="apercu-card">
+        <div class="ap-num">01</div>
+        <h3>Réaliser</h3>
+        <p>Développement d'applications en C, Python, Java et HTML/CSS. Conventions de codage strictes.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+      <a href="competences.html#c2" class="apercu-card">
+        <div class="ap-num">02</div>
+        <h3>Optimiser</h3>
+        <p>Algorithmique avancée, optimisation de programmes et mesure d'efficacité.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+      <a href="competences.html#c3" class="apercu-card">
+        <div class="ap-num">03</div>
+        <h3>Administrer</h3>
+        <p>Docker, Linux, Bash — systèmes et pipelines de traitement automatisés.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+      <a href="competences.html#c4" class="apercu-card">
+        <div class="ap-num">04</div>
+        <h3>Gérer</h3>
+        <p>Bases de données relationnelles, SQL, modélisation UML, requêtes métiers.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+      <a href="competences.html#c5" class="apercu-card">
+        <div class="ap-num">05</div>
+        <h3>Conduire</h3>
+        <p>Gestion de projet, respect des cahiers des charges, livraison en plusieurs versions.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+      <a href="competences.html#c6" class="apercu-card">
+        <div class="ap-num">06</div>
+        <h3>Collaborer</h3>
+        <p>Travail en équipe, communication, répartition des rôles, numérique responsable.</p>
+        <span class="ap-link">Voir la compétence →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<section id="home-projets">
+  <div class="container">
+    <div class="section-label">Réalisations récentes</div>
+    <h2>Mes <em>Projets</em></h2>
+    <div class="proj-grid">
+      <a href="projets.html#ue1" class="proj-card">
+        <div class="proj-header">
+          <div class="proj-date">Semestre 1</div>
+          <h3>Jeu Sokoban en C</h3>
+          <p>Jeu fonctionnel en mode terminal, deux versions successives. Gestion de fichiers, zoom, annulation (undo), conventions de codage strictes.</p>
+        </div>
+        <div class="proj-footer">
+          <span class="pill blue">C</span><span class="pill">Tableaux 2D</span><span class="pill">Fichiers</span>
+        </div>
+      </a>
+      <a href="projets.html#ue3" class="proj-card">
+        <div class="proj-header">
+          <div class="proj-date">Semestre 1</div>
+          <h3>Chaîne de traitement automatisée</h3>
+          <p>Pipeline Docker/Bash pour le Ministère du Tourisme. Conversion d'images, Excel→CSV, génération automatique de 3 PDFs statistiques.</p>
+        </div>
+        <div class="proj-footer">
+          <span class="pill blue">Bash</span><span class="pill blue">Docker</span><span class="pill">ImageMagick</span>
+        </div>
+      </a>
+      <a href="projets.html#ue5" class="proj-card">
+        <div class="proj-header">
+          <div class="proj-date">Semestre 1</div>
+          <h3>Site vitrine touristique</h3>
+          <p>Site statique responsive multipage, navigation double (menu déroulant + vignettes), timeline historique illustrée, charte graphique cohérente.</p>
+        </div>
+        <div class="proj-footer">
+          <span class="pill blue">HTML</span><span class="pill blue">CSS</span><span class="pill">Responsive</span>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="projets.html" class="btn btn-outline">Voir tous les projets →</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FORMATION RAPIDE -->
+<section style="background:var(--off);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div>
+        <div class="section-label">Parcours</div>
+        <h2>Ma <em>Formation</em></h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025 – 2026</div>
+            <h3>BUT Informatique — 1ère année</h3>
+            <p>IUT de Lannion, Côtes-d'Armor<br>Développement, BDD, systèmes, réseaux, gestion de projets</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <h3>Baccalauréat — Mathématiques / NSI</h3>
+            <p>Lycée Saint-Pierre, Saint-Brieuc</p>
+          </div>
+        </div>
+        <a href="formation.html" class="btn btn-blue-light" style="margin-top:0.5rem;">Voir ma formation complète →</a>
+      </div>
+      <div>
+        <div class="section-label">Compétences techniques</div>
+        <div style="margin-top:0.5rem;" class="tech-grid">
+          <div class="tech-item"><span class="tech-name">C</span><span class="tech-cat">Langages</span></div>
+          <div class="tech-item"><span class="tech-name">Python</span><span class="tech-cat">Langages</span></div>
+          <div class="tech-item"><span class="tech-name">Java</span><span class="tech-cat">Langages</span></div>
+          <div class="tech-item"><span class="tech-name">HTML/CSS</span><span class="tech-cat">Web</span></div>
+          <div class="tech-item"><span class="tech-name">SQL</span><span class="tech-cat">BDD</span></div>
+          <div class="tech-item"><span class="tech-name">Docker</span><span class="tech-cat">Outils</span></div>
+          <div class="tech-item"><span class="tech-name">Bash</span><span class="tech-cat">Systèmes</span></div>
+          <div class="tech-item"><span class="tech-name">Git</span><span class="tech-cat">Outils</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Portfolio de <span>Rodolphe GONIDEC</span> · BUT Informatique 1ère année · IUT de Lannion · 2025–2026</p>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

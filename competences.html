@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences — Rodolphe GONIDEC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">R.<span>G</span></a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html" class="active">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="formation.html">Formation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">BUT Informatique — 1ère année · IUT de Lannion</div>
+  <h1>Mes 6 <em style="font-style:italic;color:var(--blue-600);">Compétences</em></h1>
+  <p>Chaque compétence est illustrée par une preuve concrète issue de mes projets et travaux de 1ère année. Les traces correspondent aux 6 UE du BUT Informatique.</p>
+</div>
+
+<div class="comp-section container">
+
+  <!-- C1 -->
+  <div class="comp-block" id="c1">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 01</span>
+        <h2>Réaliser un développement d'application</h2>
+        <p class="comp-desc">Concevoir et développer des applications informatiques fonctionnelles en maîtrisant les langages et outils du développement logiciel. Lire, comprendre et rédiger des spécifications, structurer son code et livrer un produit conforme à un cahier des charges précis.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace</div>
+          <h4>Jeu Sokoban en C</h4>
+          <p>Développement complet d'un jeu Sokoban en langage C (mode terminal), livré en deux versions successives. J'ai structuré le code autour de fonctions dédiées (afficherEntete, afficherPlateau, deplacer, gagne), manipulé des tableaux 2D, géré la lecture et l'écriture de fichiers .sok et .dep, implémenté un système de zoom par répétition de caractères et l'annulation (undo). Conventions strictes respectées : camelCase, 60 lignes/fonction max, 80 char/ligne.</p>
+          <a href="projets.html#ue1" class="proj-link-btn">Voir le projet UE1 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Structurer un programme C en fonctions claires et réutilisables</li>
+            <li>Manipuler des tableaux 2D et pointeurs en C</li>
+            <li>Lire et écrire des fichiers texte formatés (.sok, .dep)</li>
+            <li>Respecter un cahier des charges et des conventions de codage</li>
+            <li>Livrer plusieurs versions successives d'un logiciel</li>
+            <li>Implémenter la mécanique d'un jeu (déplacements, victoire, undo)</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">C</span><span class="tag">Tableaux 2D</span><span class="tag">Fichiers</span>
+            <span class="tag">camelCase</span><span class="tag">Fonctions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C2 -->
+  <div class="comp-block" id="c2">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 02</span>
+        <h2>Optimiser des applications informatiques</h2>
+        <p class="comp-desc">Analyser et améliorer les performances d'une application en choisissant les structures de données et algorithmes adaptés. Savoir mesurer l'efficacité d'un programme, identifier les redondances et proposer des solutions optimisées avec un bilan comparatif.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace</div>
+          <h4>Sokoban autonome & optimisation algorithmique</h4>
+          <p>En prolongement du Sokoban, j'ai d'abord automatisé le déroulement d'une partie depuis un fichier de déplacements avec détection de solution valide. Puis j'ai conçu un algorithme d'optimisation supprimant les mouvements inutiles : mouvements bloqués par un mur, et sous-suites ne déplaçant aucune caisse en ramenant Sokoban à son point de départ. Un bilan comparatif avant/après est affiché, avec proposition d'enregistrement.</p>
+          <a href="projets.html#ue2" class="proj-link-btn">Voir le projet UE2 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Concevoir un algorithme d'optimisation sur séquences</li>
+            <li>Identifier et éliminer les redondances dans un programme</li>
+            <li>Automatiser l'exécution d'un programme depuis un fichier</li>
+            <li>Mesurer et comparer l'efficacité avant/après optimisation</li>
+            <li>Détecter automatiquement une solution valide</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">C</span><span class="tag">Algorithmique</span><span class="tag">Optimisation</span>
+            <span class="tag">Fichiers</span><span class="tag">Analyse</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C3 -->
+  <div class="comp-block" id="c3">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 03</span>
+        <h2>Administrer des systèmes informatiques communicants</h2>
+        <p class="comp-desc">Installer, configurer et maintenir des systèmes d'exploitation et des environnements de déploiement. Maîtriser les outils d'administration système, de scripting avancé et de conteneurisation pour automatiser des traitements complexes en contexte professionnel simulé.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace</div>
+          <h4>Chaîne de traitement automatisée & Docker</h4>
+          <p>En situation professionnelle (ESN fictive mandatée par le Ministère du Tourisme), j'ai analysé un jeu de fichiers hétérogènes puis écrit des scripts Bash orchestrant des conteneurs Docker éphémères : conversion d'images en WebP via ImageMagick, Excel→CSV, tri et filtrage par département/région, puis génération de 3 PDFs via pipeline HTML. La chaîne est robuste à un changement de fichiers d'entrée.</p>
+          <a href="projets.html#ue3" class="proj-link-btn">Voir le projet UE3 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Créer et orchestrer des conteneurs Docker éphémères</li>
+            <li>Écrire des scripts Bash avancés (tri, filtrage, pipelines)</li>
+            <li>Convertir des formats de fichiers hétérogènes (images, Excel)</li>
+            <li>Générer des PDFs via pipeline HTML automatisé</li>
+            <li>Travailler en mise en situation professionnelle (ESN)</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Docker</span><span class="tag">Bash</span><span class="tag">Linux</span>
+            <span class="tag">ImageMagick</span><span class="tag">Pipeline</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C4 -->
+  <div class="comp-block" id="c4">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 04</span>
+        <h2>Gérer des données de l'information</h2>
+        <p class="comp-desc">Concevoir, gérer et exploiter des bases de données en garantissant qualité, cohérence et intégrité des données. Maîtriser le cycle complet de conception d'un système d'information, du besoin client exprimé en langage naturel jusqu'à l'exploitation des données via SQL.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace </div>
+          <h4>Conception et implémentation d'une base de données</h4>
+          <p>Projet tutoré en binôme : à partir d'un besoin client en langage naturel avec règles de gestion et données réelles, j'ai construit un diagramme de classes UML, analysé le jeu de données réelles, traduit la modélisation en script SQL de création de base de données relationnelle, puis rédigé les requêtes SQL métiers. Livré en 3 rendus progressifs évalués individuellement.</p>
+          <a href="projets.html#ue4" class="proj-link-btn">Voir le projet UE4 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Analyser un besoin client et formaliser des règles de gestion</li>
+            <li>Concevoir un diagramme de classes UML complet</li>
+            <li>Implémenter une BDD relationnelle en SQL</li>
+            <li>Rédiger des requêtes SQL métiers complexes</li>
+            <li>Livrer un projet en plusieurs rendus progressifs</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">SQL</span><span class="tag">UML</span><span class="tag">Tutorial D</span>
+            <span class="tag">BDD relationnelle</span><span class="tag">Modélisation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C5 -->
+  <div class="comp-block" id="c5">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 05</span>
+        <h2>Conduire un projet</h2>
+        <p class="comp-desc">Organiser et piloter un projet informatique en respectant les délais, les besoins du client et les méthodes de gestion de projet. Savoir planifier, décomposer les tâches, livrer des versions fonctionnelles et adapter le travail aux contraintes imposées par un cahier des charges.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace</div>
+          <h4>Site vitrine touristique HTML/CSS responsive</h4>
+          <p>Le Ministère du Tourisme nous a commandé un site vitrine statique multipage (accueil avec timeline historique illustrée, page Lieu incontournable, Personnage célèbre, Œuvre artistique). J'ai planifié le développement, respecté le cahier des charges, livré une version Desktop en décembre puis une version responsive en janvier. Navigation double via menu déroulant et vignettes illustrées.</p>
+          <a href="projets.html#ue5" class="proj-link-btn">Voir le projet UE5 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Lire et respecter un cahier des charges précis</li>
+            <li>Planifier et livrer un projet en deux versions dans les délais</li>
+            <li>Concevoir une navigation multi-entrées (menu + vignettes)</li>
+            <li>Adapter un site Desktop en version responsive</li>
+            <li>Optimiser les temps de chargement d'un site statique</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span>
+            <span class="tag">Git</span><span class="tag">Gestion projet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C6 -->
+  <div class="comp-block" id="c6">
+    <div class="comp-top">
+      <div class="comp-header-text">
+        <span class="comp-badge">Compétence 06</span>
+        <h2>Collaborer au sein d'une équipe informatique</h2>
+        <p class="comp-desc">S'intégrer et contribuer efficacement à une équipe professionnelle en adoptant les pratiques collaboratives. Développer ses compétences interpersonnelles, comprendre les dynamiques de groupe et les enjeux du numérique responsable dans les métiers de l'informatique.</p>
+      </div>
+    </div>
+    <div class="comp-bottom">
+      <div class="comp-bottom-grid">
+        <div class="preuve-box">
+          <div class="preuve-label">Preuve & Trace</div>
+          <h4>Travail en équipe dans l'éco-système numérique</h4>
+          <p>Projet collectif en groupe de 4 mobilisant gestion des organisations, économie durable et communication. J'ai participé activement à la répartition des rôles, la communication interne et la coordination des contributions, en mobilisant les notions de gestion d'organisation et numérique responsable pour structurer nos productions collectives.</p>
+          <a href="projets.html#ue6" class="proj-link-btn">Voir le projet UE6 →</a>
+        </div>
+        <div class="acquis-box">
+          <div class="acquis-label">Compétences acquises</div>
+          <ul class="acquis-list">
+            <li>Répartir les rôles au sein d'une équipe de 4 personnes</li>
+            <li>Coordonner les contributions et gérer la communication interne</li>
+            <li>Mobiliser des notions de gestion d'organisation</li>
+            <li>Comprendre les enjeux du numérique responsable</li>
+            <li>Valoriser les soft skills dans les métiers du numérique</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Travail d'équipe</span><span class="tag">Communication</span>
+            <span class="tag">Organisation</span><span class="tag">Numérique responsable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="container">
+    <p>Portfolio de <span>Rodolphe GONIDEC</span> · BUT Informatique 1ère année · IUT de Lannion · 2025–2026</p>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

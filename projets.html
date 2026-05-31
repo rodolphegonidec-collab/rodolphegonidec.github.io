@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets — Rodolphe GONIDEC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">R.<span>G</span></a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Accueil</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="formation.html">Formation</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="section-label">BUT Informatique — Semestre 1</div>
+  <h1>Mes <em style="font-style:italic;color:var(--blue-600);">Projets</em></h1>
+  <p>Six projets réalisés lors de ma 1ère année de BUT Informatique à l'IUT de Lannion, couvrant chacun une Unité d'Enseignement du programme.</p>
+</div>
+
+<section>
+<div class="container">
+
+  <!-- UE1 -->
+  <div class="ue-block" id="ue1">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE1 — Développement</span>
+        <h2>Jeu Sokoban en C</h2>
+        <p class="ue-sub">Développement logiciel · Langage C · Mode terminal</p>
+      </div>
+      <a href="competences.html#c1" class="ue-comp-link">→ Compétence 1 : Réaliser</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>Dans le cadre de ma première année à l'IUT, j'ai reçu une commande client simulée : développer un jeu de Sokoban fonctionnel en langage C, en mode terminal, en respectant un cahier des charges précis et des conventions de codage strictes. Le projet s'est déroulé en deux versions successives.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Programme C complet et bien structuré, livré en deux versions fonctionnelles, couvrant l'ensemble du cahier des charges client tout en respectant les exigences de qualité de code imposées.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Version 1 : chargement de plateau, affichage, déplacements, sauvegarde</li>
+            <li>Version 2 : zoom par répétition de caractères, mémorisation des déplacements, annulation (undo), export de la solution</li>
+            <li>Fonctions dédiées : afficherEntete, afficherPlateau, deplacer, gagne</li>
+            <li>Manipulation de tableaux 2D et gestion de fichiers .sok et .dep</li>
+            <li>Respect strict des conventions : camelCase, max 60 lignes/fonction, 80 char/ligne</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Technologies :</span>
+      <span class="pill blue">C</span>
+      <span class="pill">Tableaux 2D</span>
+      <span class="pill">Fichiers .sok/.dep</span>
+      <span class="pill">Fonctions</span>
+      <span class="pill">Conventions de codage</span>
+    </div>
+  </div>
+
+  <!-- UE2 -->
+  <div class="ue-block" id="ue2">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE2 — Algorithmique</span>
+        <h2>Sokoban autonome & optimisation algorithmique</h2>
+        <p class="ue-sub">Algorithmique · Optimisation · Automatisation</p>
+      </div>
+      <a href="competences.html#c2" class="ue-comp-link">→ Compétence 2 : Optimiser</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>En prolongement du projet Sokoban, il m'a été demandé d'aborder une problématique algorithmique plus avancée : automatiser le déroulement d'une partie à partir d'un fichier de déplacements, puis optimiser cette suite de déplacements en supprimant les mouvements inutiles.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Programme d'optimisation fonctionnel, capable de réduire une suite de déplacements à sa forme minimale et d'afficher un bilan comparatif avant/après optimisation, avec proposition d'enregistrement du résultat.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Version 1 : lecture et exécution automatique d'une suite de déplacements depuis un fichier</li>
+            <li>Détection automatique de solution valide</li>
+            <li>Version 2 : algorithme supprimant les déplacements bloqués par un mur</li>
+            <li>Identification et suppression des sous-suites ne déplaçant aucune caisse et ramenant Sokoban à son point de départ</li>
+            <li>Affichage d'un bilan comparatif avant/après optimisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Technologies :</span>
+      <span class="pill blue">C</span>
+      <span class="pill">Algorithmique</span>
+      <span class="pill">Optimisation</span>
+      <span class="pill">Fichiers</span>
+      <span class="pill">Analyse de séquences</span>
+    </div>
+  </div>
+
+  <!-- UE3 -->
+  <div class="ue-block" id="ue3">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE3 — Systèmes & Administration</span>
+        <h2>Chaîne de traitement automatisée & Docker</h2>
+        <p class="ue-sub">Docker · Bash · Linux · Pipeline de données</p>
+      </div>
+      <a href="competences.html#c3" class="ue-comp-link">→ Compétence 3 : Administrer</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>Mis en situation professionnelle dans une ESN fictive mandatée par le Ministère du Tourisme français, mon équipe a été sollicitée pour automatiser le traitement de fichiers hétérogènes (images, textes, tableurs Excel) reçus régulièrement par une équipe de développement web, qui effectuait jusque-là ce travail manuellement.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Chaîne de traitement entièrement automatisée, robuste à un changement de jeu de fichiers, documentée et rendue dans les délais. Première expérience concrète de Docker, Bash avancé et pipeline de données en contexte professionnel.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Phase A : analyse de chaque fichier (format, poids, dimensions, structure)</li>
+            <li>Conversion d'images en WebP avec redimensionnement via ImageMagick dans Docker</li>
+            <li>Conversion de fichiers Excel en CSV dans des conteneurs éphémères</li>
+            <li>Phase B : scripts Bash orchestrant plusieurs conteneurs Docker</li>
+            <li>Tri, filtrage, ajout des noms de départements et régions depuis fichiers de référence</li>
+            <li>Génération de 3 PDFs (par département, par visiteurs, par région) via pipeline HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Technologies :</span>
+      <span class="pill blue">Docker</span>
+      <span class="pill blue">Bash</span>
+      <span class="pill">Linux</span>
+      <span class="pill">ImageMagick</span>
+      <span class="pill">CSV</span>
+      <span class="pill">PHP</span>
+      <span class="pill">Pipeline HTML→PDF</span>
+    </div>
+  </div>
+
+  <!-- UE4 -->
+  <div class="ue-block" id="ue4">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE4 — Bases de données</span>
+        <h2>Conception et implémentation d'une base de données</h2>
+        <p class="ue-sub">SQL · UML · Modélisation relationnelle · Projet tutoré en binôme</p>
+      </div>
+      <a href="competences.html#c4" class="ue-comp-link">→ Compétence 4 : Gérer</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>Dans le cadre d'un projet tutoré en binôme, j'ai reçu un besoin exprimé en langage naturel par un client fictif, accompagné d'un ensemble de règles de gestion et d'un jeu de données réelles à analyser. L'objectif : concevoir une base de données relationnelle complète répondant aux besoins du client.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Base de données fonctionnelle livrée en 3 rendus progressifs (modélisation, implémentation, requêtes), évaluée individuellement. Maîtrise concrète du cycle complet de conception d'un système d'information.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Construction d'un diagramme de classes UML à partir du cahier des charges</li>
+            <li>Analyse du jeu de données réelles pour affiner les règles de gestion</li>
+            <li>Traduction de la modélisation en script SQL de création de BDD</li>
+            <li>Rédaction des requêtes SQL permettant de répondre aux questions métiers</li>
+            <li>3 rendus progressifs : modélisation → implémentation → requêtes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Technologies :</span>
+      <span class="pill blue">SQL</span>
+      <span class="pill blue">UML</span>
+      <span class="pill">Tutorial D</span>
+      <span class="pill">Modélisation relationnelle</span>
+      <span class="pill">Dictionnaire de données</span>
+    </div>
+  </div>
+
+  <!-- UE5 -->
+  <div class="ue-block" id="ue5">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE5 — Développement Web</span>
+        <h2>Site vitrine touristique HTML/CSS responsive</h2>
+        <p class="ue-sub">HTML · CSS · Responsive design · Gestion de projet</p>
+      </div>
+      <a href="competences.html#c5" class="ue-comp-link">→ Compétence 5 : Conduire</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>Le Ministère du Tourisme d'un pays de notre choix nous a commandé un site web vitrine statique pour promouvoir son territoire auprès de différents publics (tourisme culturel, naturel, gastronomique, etc.), avec un cahier des charges précis définissant les pages et contenus attendus.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Site vitrine complet, portable (utilisable depuis une clé USB), optimisé en temps de chargement et visuellement cohérent avec l'identité du pays choisi, livré dans les délais en deux versions fonctionnelles.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Structuration du site en plusieurs pages thématiques (accueil, Lieu, Personnage, Œuvre)</li>
+            <li>Accueil avec timeline historique illustrée</li>
+            <li>Navigation double : menu déroulant et vignettes illustrées</li>
+            <li>Intégration : géographie, démographie, emblèmes, activités touristiques</li>
+            <li>Version Desktop livrée en décembre 2025</li>
+            <li>Adaptation responsive complète pour smartphones livrée en janvier 2026</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Technologies :</span>
+      <span class="pill blue">HTML</span>
+      <span class="pill blue">CSS</span>
+      <span class="pill">Responsive design</span>
+      <span class="pill">Menu déroulant</span>
+      <span class="pill">Navigation multi-entrées</span>
+    </div>
+  </div>
+
+  <!-- UE6 -->
+  <div class="ue-block" id="ue6">
+    <div class="ue-header">
+      <div class="ue-meta">
+        <span class="ue-badge">UE6 — Collaboration & Numérique</span>
+        <h2>Travail en équipe dans l'éco-système numérique</h2>
+        <p class="ue-sub">Travail collaboratif · Gestion d'organisation · Numérique responsable</p>
+      </div>
+      <a href="competences.html#c6" class="ue-comp-link">→ Compétence 6 : Collaborer</a>
+    </div>
+    <div class="ue-body">
+      <div class="ue-body-grid">
+        <div>
+          <div class="ue-section-title">Contexte & Objectif</div>
+          <p>Dans le cadre d'un projet collectif en groupe de 4, il m'a été demandé de développer des compétences interpersonnelles et de mieux comprendre l'environnement numérique professionnel, en mobilisant des ressources en gestion des organisations, économie durable et communication.</p>
+          <div class="bilan-box">
+            <div class="bilan-label">Résultat livré</div>
+            <p>Expérience concrète du travail en équipe en contexte informatique, qui m'a sensibilisé aux dynamiques de groupe, à l'importance de la communication et à la valeur des compétences non techniques dans les métiers du numérique.</p>
+          </div>
+        </div>
+        <div>
+          <div class="ue-section-title">Ce que j'ai réalisé</div>
+          <ul class="ue-list">
+            <li>Participation active aux séances encadrées et en autonomie</li>
+            <li>Contribution à la répartition des tâches au sein de l'équipe de 4</li>
+            <li>Prise de part aux échanges et décisions collectives</li>
+            <li>Mobilisation des notions de gestion d'organisation et communication</li>
+            <li>Application des principes du numérique responsable</li>
+            <li>Structuration des productions collectives du groupe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ue-footer">
+      <span class="ue-footer-label">Compétences :</span>
+      <span class="pill blue">Travail d'équipe</span>
+      <span class="pill blue">Communication</span>
+      <span class="pill">Organisation</span>
+      <span class="pill">Numérique responsable</span>
+      <span class="pill">Dynamiques de groupe</span>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Portfolio de <span>Rodolphe GONIDEC</span> · BUT Informatique 1ère année · IUT de Lannion · 2025–2026</p>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="formation.html">Formation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
